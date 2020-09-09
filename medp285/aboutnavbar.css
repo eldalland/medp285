@@ -1,0 +1,44 @@
+   .topnav {
+    overflow: hidden;
+    background-color: white;
+    text-align:center;
+    padding: 22px 22px;
+    border: 0.5px solid gray ;
+  }
+  
+  .topnav a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    float: center;
+    color:black;
+    text-align:right;
+    padding: 18px 50px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .topnav a:hover {
+    background-color:gray;
+    color:white;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+    }
+    body {
+        background-color: white;
+        margin:0;
+      }
+
+       #textbox {
+        background-color: white;
+        height: 600px;
+        width: 1200px;
+        margin-left: 10%;
+        margin-right: 8%;
+        border-collapse: separate;
+        border-spacing: 15px 50px;
+       }
+        
+      

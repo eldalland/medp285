@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="navibar.css">
+        <style>
+        h1 {
+        text-align:center;
+        color: black;
+        text-shadow: white 0px 0px 10px;    
+        }
+        p{
+        text-align:center;
+        font-size: 40px;  
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: white 0px 0px 10px;  
+        }
+
+         .background img {
+         filter:grayscale(80%);    
+         }    
+         .center{
+            display: block;
+    margin: 0 auto;
+         } 
+        </style>
+        </head>
+        
+<body>
+
+    <div class="topnav">
+        <a class="Home" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1> Hello, nice to meet you!</h1>
+      <p> WELCOME TO MY WEBSITE.</p>
+      <picture>
+        <source media="(max-width: 959px)" srcset="noche480.jpg">
+        <source media="(max-width: 1279px)" srcset="noche960.jpg">
+            <source media="(min-width: 1280px)" srcset="noche1280.jpg">    
+        <img src="noche480.jpg" alt="Black Kitten">
+      </picture>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="gallerynavbar.css">
+  <style>
+    h1{
+      border-bottom:0.5px solid gray;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+      a:link {
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+}
+a:visited{
+  text-decoration: none;
+  color:black;
+}
+        .imgs {
+          max-width: 600px;
+          display: grid;
+          grid-template-columns: repeat(4, minmax(300px, 1fr));
+          gap: 0em;
+          margin-left: auto;
+          margin-right: 650px;
+        }
+        .imgs > .img__wrap {
+          position: relative;
+        }
+        .img__description_layer {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: gray;
+          color: #fff;
+          visibility: hidden;
+          opacity: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+    
+          /* transition effect. not necessary */
+          transition: opacity 0.2s, visibility 0.2s;
+        }
+    
+        .img__wrap:hover .img__description_layer {
+          visibility: visible;
+          opacity: 1;
+        }
+    
+        .img__description {
+          transition: 0.2s;
+          transform: translateY(1em);
+        }
+    
+        .img__wrap:hover .img__description {
+          transform: translateY(0);
+        }
+    
+        img {
+          width:300px;
+          height: 300px;
+          filter: grayscale(100%);
+        }
+        a {
+          z-index: 999;
+          text-decoration: none;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        #bottomborder {
+          width:150px;
+        }
+
+  </style>
+
+</head>
+<body>
+  <div class="topnav">
+    <a class="Home" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <br>
+  <br>
+  <br>
+ <div id="textbox">
+    <div id="bottomborder"><h1>GALLERY</h1></div>
+    <br>
+    
+    <article class="imgs">
+    <section class="img__wrap">
+      <img src="station.jpg" alt="Slideshow" />
+
+      <section class="img__description_layer">
+        <a href="slideshow.html">
+          SLIDESHOW
+        </a>
+      </section>
+    </section>
+    <!---
+    <section class="img__wrap">
+      <img src="eye.jpg" alt="" />
+        <section class="img__description_layer">
+            <a href="eyeprojectpage.html">
+             EYE AND iART POSTER
+              </a>
+      </section>
+    </section>
+    <section class="img__wrap">
+      <img src="originaltogepi4.jpg" alt="" />
+      <section class="img__description_layer">
+        <a href="depthoffieldphotos.html">
+            DEPTH OF FIELD PHOTOS
+            </a>
+      </section>
+    </section>
+    <section class="img__wrap">
+      <img src="pattern2.png" alt="" />
+      <section class="img__description_layer">
+        <a href="Pattern-Page.html">
+          PATTERNS
+            </a>
+      </section>
+    </section>
+    <section class="img__wrap">
+      <img src="Togepi-ANimation.gif" alt="" />
+      <section class="img__description_layer">
+        <a href="Animations.html">
+            ANIMATIONS
+            </a>
+      </section>
+    </section>
+    <section class="img__wrap">
+        <img src="Quarantinestproject.jpg" alt="" />
+        <section class="img__description_layer">
+            <a href="datavisualization.html">
+               DATA VISUALIZATION
+                </a>
+        </section>
+      </section>
+      <section class="img__wrap">
+        <img src="photocollage1.jpg" alt="" />
+        <section class="img__description_layer">
+            <a href="photocollage.html">
+                PHOTOCOLLAGES
+                </a>
+        </section>
+      </section>
+      <section class="img__wrap">
+        <img src="Screen 1.jpg" alt="" />
+        <section class="img__description_layer">
+            <a href="interactivestory.html">
+               INTERACTIVE STORY
+                </a>
+        </section>
+      </section>
+      -->
+  </article>
+    </div>
+    
+</body>
+</html>
